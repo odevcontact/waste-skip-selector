@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+## Waste Skip Selector
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+The Waste Skip Selector is a React-based web application that allows users to select a waste skip for garden waste collection. The app retrieves skip options based on the user’s postcode and displays available skips with relevant information such as size, price (before VAT), and additional details like whether the skip can be placed on the road or allows heavy waste.
 
-## Available Scripts
+## Technologies Used
+React: For building the user interface.
+CSS: For styling and responsiveness.
+JavaScript: For the app's functionality.
+Git: For version control.
+GitHub: For hosting the project repository.
 
-In the project directory, you can run:
+## Working way
+Fetches data from an external API to display skip options based on the user's postcode.
+Each skip option includes details like size, price, VAT, and road placement.
+Responsive Design: The app is fully responsive, providing an optimal experience on both desktop and mobile.
+Scroll Indicator: A scroll-down arrow guides users to view the skip options below the fold.
+Smooth Scrolling: Clicking the scroll arrow smoothly scrolls to the skip options section.
+  
+## Setup Instructions
 
-### `npm start`
+git clone https://github.com/your-username/waste-skip-selector.git
+Install Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd waste-skip-selector
+npm install
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Run the Application: Once the dependencies are installed, start the development server:
 
-### `npm test`
+npm start
+Open the App: Open your web browser and go to http://localhost:3000 to see the app in action.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Some Features
+User Interaction:
 
-### `npm run build`
+The user enters a postcode and selects a garden waste option.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The app fetches the available skip options from the API based on the postcode.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The skip options are displayed with relevant details such as size, price, VAT, and whether they can be placed on the road.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Data Fetching:
 
-### `npm run eject`
+The skip data is fetched from the following API: https://app.wewantwaste.co.uk/api/skips/by-location?postcode=NR32&area=Lowestoft.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Scroll Indicator:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A scroll-down arrow is displayed at the top of the page to guide users to scroll down to the skip options section.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Responsive Design:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The app uses a responsive layout to ensure the content displays correctly on both mobile and desktop screens.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
