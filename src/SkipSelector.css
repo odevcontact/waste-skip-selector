@@ -1,0 +1,67 @@
+.skip-selector {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skip-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skip-option {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skip-option h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.skip-option p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.skip-option button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.skip-option button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .skip-options {
+    grid-template-columns: 1fr;
+  }
+}
+
